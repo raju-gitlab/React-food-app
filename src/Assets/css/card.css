@@ -1,0 +1,68 @@
+  .cards-container {
+    display: flex;
+    border-radius: 6px;
+    color: #333;
+    background: #eee;
+    padding: 1rem;
+    gap: 30px;
+    overflow-x: auto;
+    position: relative;
+  }
+  .cards-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.card {
+    border-radius: 15px;
+    flex: 1 0 2700px;
+    overflow: hidden;
+  }
+
+  .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .badge-custom {
+    background-color: #FFC107;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .btn-custom {
+    background-color: #E8F5E9;
+    color: #388E3C;
+    border-radius: 10px;
+  }
+
+  .btn-custom:hover {
+    background-color: #C8E6C9;
+  }
+
+  .btn-secondary-custom {
+    background-color: #E0F2F1;
+    color: #00796B;
+    border-radius: 10px;
+  }
+
+  .btn-secondary-custom:hover {
+    background-color: #B2DFDB;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+  }

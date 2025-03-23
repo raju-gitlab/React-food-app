@@ -1,0 +1,154 @@
+  .wrapper {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .wrapper-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .loading-spinner {
+    color: red;
+    position: absolute;
+    left: -3em;
+    content: "";
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .status {
+    line-height: 52px;
+  }
+  
+  .react-autosuggest__container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  h3 {
+    margin-bottom: 1em;
+    font-weight: bold;
+    color: steelblue;
+  }
+  
+  .react-autosuggest__input {
+    display: block;
+    width: 100%;
+    height: 4em;
+    padding: 1em 1.5em;
+    box-sizing: border-box;
+    font-size: 1em;
+    border: 1px solid #aaa;
+    border-radius: 2em;
+    outline: none;
+    transition: border-radius 250ms ease;
+  }
+  .react-autosuggest__input:focus {
+    outline: none;
+    border: 1px solid steelblue;
+  }
+  .react-autosuggest__container--open .react-autosuggest__input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+  }
+  
+  .react-autosuggest__suggestions-container {
+    width: 100%;
+    visibility: hidden;
+    will-change: opacity;
+    position: relative;
+    overflow: hidden;
+    transform-origin: 50% 0%;
+    transform: scale(1, 0);
+    opacity: 0;
+    transition: all 250ms ease;
+  }
+  .react-autosuggest__container--open .react-autosuggest__suggestions-container {
+    display: block;
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    transform: scale(1, 1);
+    visibility: visible;
+    opacity: 1;
+    box-sizing: border-box;
+    border: 1px solid steelblue;
+    border-top: 0;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    border-radius: 2em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 2;
+  }
+  .react-autosuggest__container--open .react-autosuggest__suggestions-container .suggestion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .react-autosuggest__container--open .react-autosuggest__suggestions-container .name {
+    color: #ccc;
+  }
+  .react-autosuggest__container--open .react-autosuggest__suggestions-container .username {
+    font-size: 0.7em;
+    padding: 0.25em 0.5em;
+    box-sizing: border-box;
+    background: #ccc;
+    color: white;
+    margin-right: 1em;
+  }
+  
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .react-autosuggest__suggestion {
+    cursor: default;
+    box-sizing: border-box;
+    padding: 1em 1.5em;
+  }
+  .react-autosuggest__suggestion .name b {
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .react-autosuggest__suggestion--focused .suggestion {
+    color: #699bc4;
+  }
+  .react-autosuggest__suggestion--focused .suggestion b {
+    color: #3f75a2;
+  }

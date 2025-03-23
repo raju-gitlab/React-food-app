@@ -1,7 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
 
+console.log("renderes");
 function App() {
+
+  useEffect(() => {
+    console.log("Logged");
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
