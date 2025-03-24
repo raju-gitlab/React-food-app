@@ -95,7 +95,7 @@ function Home() {
                                                     <div className="slider_image full text_align_center">
                                                         <img
                                                             className="img-responsive"
-                                                            src="/Assets/images/burger_slide.png"
+                                                            src="/React-food-app/Assets/images/burger_slide.png"
                                                             alt="#"
                                                         />
                                                     </div>
@@ -125,7 +125,7 @@ function Home() {
                                                     <div className="slider_image">
                                                         <img
                                                             className="img-responsive"
-                                                            src="/Assets/images/burger_slide.png"
+                                                            src="/React-food-app/Assets/images/burger_slide.png"
                                                             alt="#"
                                                         />
                                                     </div>
@@ -133,22 +133,7 @@ function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                    <a
-                                        className="carousel-control-prev"
-                                        href="#main_slider"
-                                        role="button"
-                                        data-slide="prev"
-                                    >
-                                        <i className="fa fa-angle-up" />
-                                    </a>
-                                    <a
-                                        className="carousel-control-next"
-                                        href="#main_slider"
-                                        role="button"
-                                        data-slide="next"
-                                    >
-                                        <i className="fa fa-angle-down" />
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -163,7 +148,7 @@ function Home() {
                             <div className="col-md-12">
                                 <div className="title">
                                     <i>
-                                        <img src="/Assets/images/title.png" alt="#" />
+                                        <img src="/React-food-app/Assets/images/title.png" alt="#" />
                                     </i>
                                     <h2>Order food & groceries. Discover best restaurants.</h2>
                                     {/* <div className="row gap-3">
@@ -230,7 +215,7 @@ function Home() {
                                     style={{ height: "90px", width: "90px" }}
                                     alt="QR code for app download"
                                     className="mx-auto mx-md-0"
-                                    src="/Assets/images/qr.png"
+                                    src="/React-food-app/Assets/images/qr.png"
                                 />
                             </div>
 
@@ -241,7 +226,7 @@ function Home() {
                                 <img
                                     alt="Device mockup front view"
                                     className="img-fluid rounded-lg mr-3"
-                                    src="/Assets/images/downloadapp.png"
+                                    src="/React-food-app/Assets/images/downloadapp.png"
                                 />
                             </div>
                         </div>

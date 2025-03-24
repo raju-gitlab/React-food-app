@@ -2,7 +2,6 @@ import '../../Assets/css/bootstrap.min.css'
 import '../../Assets/css/owl.carousel.min.css'
 import '../../Assets/css/style.css'
 import '../../Assets/css/responsive.css'
-import Button from 'react-bootstrap/Button';
 import { Modal, Form } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 
@@ -208,7 +207,7 @@ const Header = () => {
                         <div className="col-md-3">
                             <div className="full">
                                 <a className="logo" href="index.html">
-                                    <img src="/Assets/images/logo.png" alt="#" />
+                                    <img src="/React-food-app/Assets/images/logo.png" alt="#" />
                                 </a>
                             </div>
                         </div>
@@ -220,7 +219,7 @@ const Header = () => {
                                             Contact Us :{" "}
                                             <img
                                                 style={{ marginRight: 15, marginLeft: 15 }}
-                                                src="/Assets/images/phone_icon.png"
+                                                src="/React-food-app/Assets/images/phone_icon.png"
                                                 alt="#"
                                             />
                                             <a href="#">987-654-3210</a>
@@ -228,7 +227,7 @@ const Header = () => {
                                         <li className="dinone">
                                             <img
                                                 style={{ marginRight: 15 }}
-                                                src="/Assets/images/mail_icon.png"
+                                                src="/React-food-app/Assets/images/mail_icon.png"
                                                 alt="#"
                                             />
                                             <a href="#">demo@gmail.com</a>
@@ -241,7 +240,7 @@ const Header = () => {
                                                     position: "relative",
                                                     top: "-2px"
                                                 }}
-                                                src="/Assets/images/location_icon.png"
+                                                src="/React-food-app/Assets/images/location_icon.png"
                                                 alt="#"
                                             />
                                             <a href="#">104 New york , USA</a>
@@ -262,13 +261,13 @@ const Header = () => {
                                         <li>
                                             <img
                                                 style={{ marginRight: 15 }}
-                                                src="/Assets/images/search_icon.png"
+                                                src="/React-food-app/Assets/images/search_icon.png"
                                                 alt="#"
                                             />
                                         </li>
                                         <li>
                                             <button type="button" id="sidebarCollapse">
-                                                <img src="/Assets/images/menu_icon.png" alt="#" />
+                                                <img src="/React-food-app/Assets/images/menu_icon.png" alt="#" />
                                             </button>
                                         </li>
                                     </ul>

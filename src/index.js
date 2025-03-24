@@ -10,30 +10,33 @@ import Home from './components/body/home';
 import Carosoul from './components/body/Carosoul';
 import FoodDetails from './components/body/FoodDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element : <Layout/>,
-    children : [
-      {
-        index: true,
-        element : <Home />
-      },
-      {
-        path: "/resturants",
-        element : <Restraunt/>
-      },
-      {
-        path: "/carosoul",
-        element: <Carosoul/>
-      },
-      {
-        path: "/food/:foodName/:collectionId/:offset/:type/:tags",
-        element: <FoodDetails/>
-      }
-    ]
-  }
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "resturants",
+          element: <Restraunt />,
+        },
+        {
+          path: "carosoul",
+          element: <Carosoul />,
+        },
+        {
+          path: "food/:foodName/:collectionId/:offset/:type/:tags",
+          element: <FoodDetails />,
+        },
+      ],
+    },
+  ],
+  { basename: "/React-food-app" }
+);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={router}/>
